@@ -1,0 +1,20 @@
+{
+  "name": "extract-version-from-tag-action",
+  "version": "1.0.0",
+  "description": "This action extract the version from the latest tag and provide outputs to use in the rest of the job.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-action": "tsc && ncc build lib/index.js --license licenses.txt"
+  },
+  "keywords": [],
+  "author": "damienaicheh",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/exec": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.17.4"
+  }
+}

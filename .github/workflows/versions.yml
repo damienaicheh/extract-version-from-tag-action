@@ -1,0 +1,35 @@
+name: versions
+
+on:
+  pull_request:
+    paths-ignore:
+      - '**.md'
+  push:
+    branches:
+      - main
+      - master
+      - releases/*
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  local-version:
+    runs-on: ubuntu-latest
+    name: Update AndroidManifest.xml
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Mandatory to use the extract version from tag action
+
+      - name: Extract version from tag
+        uses: ./
+
+      - name: Output the variables
+        run: |
+          echo The major was $MAJOR
+          echo The minor was $MINOR
+          echo The patch was $PATCH
+          echo The pre-release was $PRE_RELEASE
+          echo The number of commits was $NUMBER_OF_COMMITS
+          echo The number of commits since tag was $NUMBER_OF_COMMITS_SINCE_TAG
