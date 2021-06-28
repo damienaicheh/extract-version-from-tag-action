@@ -18,11 +18,11 @@ To be able to use this action, you must retreive all the history of the reposito
 
 You will then have access to these outputs:
 
-The major digit: `$MAJOR`
-The minor digit: `$MINOR`
-The patch digit: `$PATCH`
+- The major digit: `$MAJOR`
+- The minor digit: `$MINOR`
+- The patch digit: `$PATCH`
 
-If it's a prerelease with like for exemple the `-beta1` the value `beta1` will be extracted inside `$PRE_RELEASE`. If no pre release is found this output will be empty.
+- If it's a pre-release with like for exemple the `-beta1` the value `beta1` will be extracted inside `$PRE_RELEASE`. If no pre-release is found this output will be empty.
 
-The number of commits will be available inside: `$NUMBER_OF_COMMITS`.
-The number of commits since tag will be available inside: `$NUMBER_OF_COMMITS_SINCE_TAG`.
+- The number of commits will be available inside: `$NUMBER_OF_COMMITS`.
+- The number of commits since tag will be available inside: `$NUMBER_OF_COMMITS_SINCE_TAG`.
