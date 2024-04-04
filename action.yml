@@ -2,7 +2,7 @@ name: 'Extract version from tag'
 description: 'Create multiple variables from the extracted tag version'
 author: 'damienaicheh'
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
 branding:
   icon: 'tag'
