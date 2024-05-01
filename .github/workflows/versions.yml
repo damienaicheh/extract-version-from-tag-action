@@ -16,7 +16,7 @@ on:
 jobs:
   local-version:
     runs-on: ubuntu-latest
-    name: Update AndroidManifest.xml
+    name: Extract version from tag
     steps:
       - name: Checkout
         uses: actions/checkout@v4
