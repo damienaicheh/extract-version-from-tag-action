@@ -13,7 +13,7 @@ To be able to use this action, you must retreive all the history of the reposito
     fetch-depth: 0 # Mandatory to use the extract version from tag action
 
 - name: Extract version from tag
-  uses: damienaicheh/extract-version-from-tag-action@v1.3.0
+  uses: damienaicheh/extract-version-from-tag-action@v1
 ```
 
 You will then have access to these outputs:

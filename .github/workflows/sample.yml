@@ -23,4 +23,4 @@ jobs:
           fetch-depth: 0 # Mandatory to use the extract version from tag action
 
       - name: Extract version from tag
-        uses: damienaicheh/extract-version-from-tag-action@v1.2.0
+        uses: damienaicheh/extract-version-from-tag-action@v1
