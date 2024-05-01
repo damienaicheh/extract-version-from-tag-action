@@ -18,7 +18,7 @@ jobs:
     name: Update AndroidManifest.xml
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Mandatory to use the extract version from tag action
 
