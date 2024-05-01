@@ -1,6 +1,7 @@
 name: versions
 
 on:
+  workflow_dispatch:
   pull_request:
     paths-ignore:
       - '**.md'
