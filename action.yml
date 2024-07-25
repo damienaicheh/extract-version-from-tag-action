@@ -4,6 +4,10 @@ author: 'damienaicheh'
 runs:
   using: 'node20'
   main: 'dist/index.js'
+inputs:
+  remove-tag-prefix:
+    description: 'Remove the prefix from the tag name if it is defined.'
+    required: false
 branding:
   icon: 'tag'
   color: 'purple'

@@ -57,6 +57,11 @@ async function getLastestTag(): Promise<string | undefined> {
 
 function formatSemanticValuesFromTag(tag: String) {
 
+    const prefix = core.getInput('remove-tag-prefix', { required: false });
+    if (prefix && tag.startsWith(prefix)) {
+        tag = tag.substring(prefix.length);
+    }
+    
     if (tag.includes('v')) {
         tag = tag.split('v')[1];
     }
